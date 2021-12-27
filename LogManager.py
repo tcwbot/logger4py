@@ -6,7 +6,7 @@ import os
 # done - rolling files.
 # done - max_filesize
 # done - max number of files.
-# - add Configuration Method to consume cfg file.
+# - add Configuration Method to consume cfg file. config.dictObj(params)
 # - add documentation
 # - use bitshift for max_filesize=(1 << 30)
 # - create a enum class for levels, instead class vars.
