@@ -1,5 +1,5 @@
 # logger4
-Another Logger Implementation
+Another python Logger Implementation
 ```
 import LogManager
 logger = LogManager.Logger();
