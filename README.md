@@ -1,9 +1,18 @@
 # logger4
 Another Logger Implementation
-
 ```
+import LogManager
+logger = LogManager.Logger();
+logger.set_log_level(logger.INFO)
+logger.error('message')
+logger.info('message')
+logger.warn('message')
+logger.debug('message')
+```
+
 # Usage:
-# $ python3 log_tester.py;ls -lt default.log*
+```
+$ python3 log_tester.py;ls -lt default.log*
 -rw-r--r--  1 rlozano  staff   697317 Dec 24 02:42 default.log
 -rw-r--r--  1 rlozano  staff  1000006 Dec 24 02:42 default.log.1
 -rw-r--r--  1 rlozano  staff  1000006 Dec 24 02:42 default.log.2
