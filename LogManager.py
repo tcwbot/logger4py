@@ -7,6 +7,12 @@ import os
 # done - max_filesize
 # done - max number of files.
 # - add Configuration Method to consume cfg file. config.dictObj(params)
+# kwargs={
+#	"level":1,
+#	"suffix":2,
+#	"max_no_files":10,
+#   "max_filesize":1000000
+#	}
 # - add documentation
 # - use bitshift for max_filesize=(1 << 30)
 # - create a enum class for levels, instead class vars.
