@@ -1,6 +1,5 @@
 import os
 import time
-import enum
 
 ### pylogger
 # TODO
