@@ -2,6 +2,7 @@ import os
 import time
 
 ### pylogger
+# Author: tcwbot
 # TODO
 # done - append to log file.
 # done - rolling files.
