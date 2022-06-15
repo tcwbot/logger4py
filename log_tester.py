@@ -3,7 +3,8 @@ import LogManager
         
 # Test Code 
 logger = LogManager.Logger();
-logger.set_log_level(logger.log_level['INFO'])
+#logger.set_log_level(logger.log_level['INFO'])
+logger.set_log_level('INFO')
 #logger.set_log_suffix('sdc')
             
 # Usage:

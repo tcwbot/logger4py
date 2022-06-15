@@ -44,7 +44,10 @@ class Logger:
             with open(self.suffix+'.log', "a+") as file:
                 file.writelines(wlog+'\n')
     def set_log_level(self,level):
-        self.level=level
+        if level in list(self.log_level.keys()):
+            self.level=self.log_level[level]
+        else:
+            pass
     def set_log_suffix(self,suffix):
         self.suffix=suffix
     def error(self,msg):
