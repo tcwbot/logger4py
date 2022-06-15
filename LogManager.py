@@ -1,5 +1,6 @@
 import os
 import time
+import enum
 
 ### pylogger
 # TODO
@@ -22,7 +23,8 @@ import time
 ###   
 
 class Logger:
-    ERROR=0;INFO=1;WARN=2;DEBUG=3;
+    log_level={'ERROR':0,'INFO':1,'WARN':2,'DEBUG':3}
+
     def __init__(self):
         self.level=1
         self.suffix='default'
@@ -47,19 +49,19 @@ class Logger:
         self.suffix=suffix
     def error(self,msg):
         self.check_filesize()
-        if self.level >= self.ERROR:
+        if self.level >= self.log_level['ERROR']:
             self.write_log('error',self.suffix,msg)
     def info(self,msg):
         self.check_filesize()
-        if self.level >= self.INFO:
+        if self.level >= self.log_level['INFO']:
             self.write_log('info',self.suffix,msg)
     def warn(self,msg):
         self.check_filesize()
-        if self.level >= self.WARN:
+        if self.level >= self.log_level['WARN']:
             self.write_log('warn',self.suffix,msg)
     def debug(self,msg):
         self.check_filesize()
-        if self.level >= self.DEBUG:
+        if self.level >= self.log_level['DEBUG']:
             self.write_log('debug',self.suffix,msg)
     @staticmethod
     def print_log(loglevel,suffix,msg):
