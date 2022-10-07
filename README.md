@@ -1,4 +1,4 @@
-# logger4
+# logger4py
 Another python Logger Implementation
 ```
 import LogManager
