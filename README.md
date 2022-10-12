@@ -1,5 +1,5 @@
 # logger4py
-logger4py is just another python Logger Implementation. Ispired by the [Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) fiasco.
+logger4py is just another python Logger Implementation. Inspired by the [Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) fiasco.
 
 Example 1:
 ```
