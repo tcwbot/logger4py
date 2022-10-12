@@ -1,5 +1,7 @@
 # logger4py
-Another python Logger Implementation
+logger4py is just another python Logger Implementation. Ispired by the [Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) fiasco.
+
+Example 1:
 ```
 import LogManager
 logger = LogManager.Logger();
@@ -8,6 +10,47 @@ logger.error('message')
 logger.info('message')
 logger.warn('message')
 logger.debug('message')
+```
+
+Example 2: Testing exceptions and other use cases.
+```
+import LogManager
+logger = LogManager.Logger();
+logger.set_log_level(logger.INFO)
+warn_condition = false
+
+try:
+  # Log the obvious. Something happened make a record of it in the logs.
+  logger.info('message: log something obvious.')
+  
+ if warn_condition == true:
+    logger.warn('message: log a warning when a condition occured.')
+except:
+  # Something went wrong
+  logger.debug('message: something went wrong')
+
+```
+
+Example 3: Test log file threshholds.
+
+```
+#from LogManager import Logger
+import LogManager
+
+# Test Code
+logger = LogManager.Logger();
+logger.set_log_level(logger.INFO)
+#logger.set_log_suffix('sdc')
+
+# Usage:
+# $ python3 file.py;ll -t default.log*
+
+if __name__ == '__main__':
+    for _ in range(5000):
+        logger.error('message')
+        logger.info('message')
+        logger.warn('message')
+        logger.debug('message')
 ```
 
 # Usage:
