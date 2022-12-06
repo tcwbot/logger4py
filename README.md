@@ -21,13 +21,13 @@ warn_condition = false
 
 try:
   # Log the obvious. Something happened make a record of it in the logs.
-  logger.info('message: log something obvious.')
+  logger.info('INFO message: log something obvious.')
   
  if warn_condition == true:
-    logger.warn('message: log a warning when a condition occured.')
+    logger.warn('WARN message: log a warning when a condition occured.')
 except:
   # Something went wrong
-  logger.debug('message: something went wrong')
+  logger.debug('DEBUG message: something went wrong')
 
 ```
 
