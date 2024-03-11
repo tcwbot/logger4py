@@ -26,7 +26,7 @@ try:
  if warn_condition == true:
     logger.warn('WARN message: log a warning when a condition occured.')
 except:
-  # Something went wrong
+  # Something went horribly wrong log it.
   logger.debug('DEBUG message: something went wrong')
 
 ```
